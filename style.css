@@ -2,4 +2,45 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+
+
 }
+body{
+    display: flex;
+    color: white;
+    background-image: url(pictures/grid.jpg);
+}
+
+.theButtons {
+    margin-top: 5vh;
+    display: grid;
+    width: 80vw;
+    min-height: 80vh;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    background-color: white;
+
+}
+.O{
+    background-color: yellow;
+}
+.O-top-left{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.O-top-right{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.O-bottom-left{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.O-bottom-right{
+    grid-column: 2;
+    grid-row: 2;
+}
+

@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.grid-wrapper {
+    display: grid;
+    width: 100vw;
+    min-height: 100vh;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.top-left {
+    grid-column: 3;
+    grid-row: 3;
+}
