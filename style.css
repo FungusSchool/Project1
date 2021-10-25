@@ -1,46 +1,124 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-
-
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
-body{
-    display: flex;
-    color: white;
-    background-image: url(pictures/grid.jpg);
+body {
+  display: flex;
+  color: white;
+  background-image: url(pictures/grid.jpg);
 }
 
 .theButtons {
-    margin-top: 5vh;
-    display: grid;
-    width: 80vw;
-    min-height: 80vh;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-    background-color: white;
-
+  margin-top: 5vh;
+  width: 80vw;
+  min-height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  
 }
-.O{
+.O {
+  /*background-color: yellow;*/
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+.O-top-left {
     background-color: yellow;
-}
-.O-top-left{
-    grid-column: 1;
-    grid-row: 1;
+  grid-column: 1;
+  grid-row: 1;
 }
 
-.O-top-right{
-    grid-column: 2;
-    grid-row: 1;
+.O-top-right {
+  grid-column: 2;
+  grid-row: 1;
 }
 
-.O-bottom-left{
-    grid-column: 1;
-    grid-row: 2;
+.O-bottom-left {
+  grid-column: 1;
+  grid-row: 2;
 }
 
-.O-bottom-right{
-    grid-column: 2;
-    grid-row: 2;
+.O-bottom-right {
+  grid-column: 2;
+  grid-row: 1;
 }
 
+.Z {
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+.Z-top {
+  background-color: red;
+  grid-column: 7;
+  grid-row: 1;
+}
+.Z-mid-left {
+    background-color: red;
+
+  grid-column: 6;
+  grid-row: 2;
+}
+.Z-mid-right {
+    background-color: red;
+
+  grid-column: 7;
+  grid-row: 2;
+}
+.Z-bottom {
+    background-color: red;
+
+  grid-column: 6;
+  grid-row: 3;
+}
+
+.J {
+  background-color: blue;
+}
+
+.J-top {
+  grid-column: 1;
+  grid-row: 7;
+}
+
+.J-bottom-left {
+  grid-column: 1;
+  grid-row: 8;
+}
+
+.J-bottom-mid {
+  grid-column: 2;
+  grid-row: 8;
+}
+
+.J-bottom-right {
+  grid-column: 3;
+  grid-row: 8;
+}
+
+.T {
+  background-color: purple;
+}
+
+.T-top {
+  grid-column: 7;
+  grid-row: 7;
+}
+
+.T-bottom-left {
+  grid-column: 6;
+  grid-row: 8;
+}
+
+.T-bottom-mid {
+  grid-column: 7;
+  grid-row: 8;
+}
+
+.T-bottom-right {
+  grid-column: 8;
+  grid-row: 8;
+}
