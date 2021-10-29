@@ -7,25 +7,28 @@ body {
   display: flex;
   color: white;
   background-image: url(pictures/grid.jpg);
+  justify-content: flex-end;
 }
 
 .theButtons {
   margin-top: 5vh;
-  width: 80vw;
+  width: 80vh;
   min-height: 80vh;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 1fr);
-  
+    
 }
 .O {
-  /*background-color: yellow;*/
+  background-color: yellow;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
+  
 }
+
+
 .O-top-left {
-    background-color: yellow;
   grid-column: 1;
   grid-row: 1;
 }
