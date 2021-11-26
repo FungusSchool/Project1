@@ -42,7 +42,7 @@ body {
   background-color: rgb(75, 75, 75);
   border: rgb(128, 124, 124);
   border-style:outset;
-  border-width: 30%;
+  border-width: thick;
 }
 
 .grid-mid{
@@ -132,27 +132,26 @@ body {
 
 .I{
 background-color: cyan;
-grid: ;
 }
 
-.I-top{
-  grid-column: 1;
-  grid-row: 1;
-}
-
-.I-mid-top{
-  grid-column: 1;
+.I-left{
+  grid-column: 4;
   grid-row: 2;
 }
 
-.I-mid-bot{
-  grid-column: 1;
-  grid-row: 3;
+.I-left-mid{
+  grid-column: 5;
+  grid-row: 2;
 }
 
-.I-bot{
-  grid-column: 1;
-  grid-row: 4;
+.I-right-mid{
+  grid-column: 6;
+  grid-row: 2;
+}
+
+.I-right{
+  grid-column: 7;
+  grid-row: 2;
 }
 
 .g1-1{
